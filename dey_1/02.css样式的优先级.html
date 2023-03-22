@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <link rel="stylesheet" href="./css/base1.css">
+
+    <style>
+        @import url(./css/base2.css);
+
+        .s {
+            background-color: yellow;
+        }
+    </style>
+
+   
+</head>
+<body>
+    
+
+    <!-- 优先级：谁靠近元素，谁的优先级 最大 -->
+
+    <div class="s" style="background:red"> 这是一个演示 样式优先级的标签 </div>
+
+    <div class="s" > 这是一个演示 样式优先级的标签 </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 并集选择器 */
+        div,
+        span {
+            background-color: red;
+        }
+
+        /* 交集选择器 */
+        div.box {
+            background-color: yellow;
+        }
+
+        /* 后代选择器 */
+        div span {
+            background-color: orange;
+        }
+
+        /* 子元素选择器 */
+        div>p {
+            background-color: aqua;
+        }
+
+        /* 相邻兄弟选择器 */
+        h1+h2 {
+            background-color: pink;
+        }
+
+        /* 新增兄弟选择器 */
+
+        h3~h4 {
+            background-color: chartreuse;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- 1.并集选择器  找到div元素和span元素，设置样式  注意多个选择器用逗号连接进行分割，独占一行-->
+    <!--
+    div,
+    span {
+        
+    }
+    -->
+    <div>并集选择器</div>
+    <span>多个选择器用逗号连接进行分割</span>
+
+    <!-- 2.交集选择器 找到div元素并且div元素有box的类名 设置样式 注意：选择器与选择器之间无需空格-->
+    <!--div.box {
+
+    }
+     -->
+    <div class="box">交集选择器</div>
+
+    <!-- 3.后代选择器 找到div元素的后代（子元素/孙子/孙子的儿子、孙子的孙子...）设置样式 注意：选择器与选择器之间有空格-->
+    <!-- div span {
+
+    } 
+    -->
+    <div>
+        <span>后代选择器</span>
+    </div>
+
+
+    <!-- 4.子元素选择器 找到div的所有p标签元素，但一定是div的子元素 注意：选择器与选择器之间是大于号  -->
+    <!-- div>p {
+
+    } -->
+    <div>
+        <p>子元素选择器</p>
+    </div>
+
+    <!-- 5.相邻兄弟选择器  找到h1标签后面第一个的兄弟元素，并且是h2标签-->
+    <!-- 
+        h1+h2 {
+
+        }
+     -->
+    <div>
+        <h1>h1标签</h1>
+        <h2>h2标签1</h2>
+        <h2>h2标签2</h2>
+    </div>
+
+    <!-- 6.新增的兄弟选择器 找到h3标签后面的所有h4标签设置样式 -->
+    <!-- 
+        h3~h4 {
+
+        }
+     -->
+    <div>
+        <h3>h3标签</h3>
+        <h4>h4标签</h4>
+        <h4>h4标签</h4>
+    </div>
+
+    <!-- 使用多个基本选择器进行组合，从而更加精准的找到指定的元素 -->
+
+
+</body>
+
+</html>

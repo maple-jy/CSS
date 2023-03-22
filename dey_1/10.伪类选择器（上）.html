@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        input:focus {
+            color: pink;
+        }
+
+        ul li:first-child {
+            background-color: red;
+        }
+
+        ul li:last-child {
+            background-color: yellow;
+        }
+
+        p:only-child {
+            background-color: blue;
+        }
+
+        ol li:nth-child(4n) {
+            background-color: red;
+        }
+
+        ol li:nth-last-child(2) {
+            background-color: green;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- 语法：选择器：伪类 {属性 ： 属性值} -->
+
+    <!-- 1.锚伪类 :link 未被访问  :visited已被访问 :hover鼠标悬停 :active被点击时-->
+
+    <!-- 注意：
+        1.:hover伪类必须置于:link和:visited后面
+        2.:active必须置于:hover的后面
+        3.爱恨原则 ==> lvha
+    -->
+
+    <a href="./09.组合选择器.html">组合选择器</a>
+    <br>
+
+    <!-- 2.表单伪类 :focus 聚焦/光标选中-->
+    <input type="text">
+
+    <!-- 3.选中第一个子元素 子元素:first-child  子元素的第一个-->
+    <ul>
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>菠萝</li>
+    </ul>
+    <!-- 4.选中最后一个子元素 子元素:last-child  子元素的最后一个 -->
+
+
+    <!-- 5. 唯一的子元素 子元素:only-child  这个元素是唯一的,父元素只能有一个子元素-->
+    <div>
+        <p>pppp</p>
+        <!-- <span>span</span> -->
+        <!-- <p>ppppp22222</p> -->
+    </div>
+
+    <!-- 6.选中某个子元素 从第一个开始 子元素：nth-child(n) n==>选择器里面匹配第几个子元素 -->
+    <!-- 注意 
+        n可以是数值  如0 1 2 3 4
+        n还可以是关键字 odd奇数 even偶数
+        n还可以是公式 3n 3的倍数 3n+1 3的倍数+1
+    -->
+    <ol>
+        <li>烤鸭</li>
+        <li>泡面</li>
+        <li>烧腊饭</li>
+        <li>口水鸡</li>
+        <li>烤鸭</li>
+        <li>泡面</li>
+        <li>烧腊饭</li>
+        <li>口水鸡</li>
+        <li>烤鸭</li>
+        <li>泡面</li>
+        <li>烧腊饭</li>
+        <li>口水鸡</li>
+        <li>烤鸭</li>
+        <li>泡面</li>
+        <li>烧腊饭</li>
+        <li>口水鸡</li>
+    </ol>
+
+    <!-- 7.选中某个子元素 从后面开始 子元素:nth-last-child(n)  n的规格和6一样-->
+
+</body>
+
+</html>

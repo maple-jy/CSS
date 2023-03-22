@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: red;
+        }
+
+        div {
+            background-color: yellow !important;
+        }
+
+        .box {
+            background-color: blue;
+            color: blue;
+        }
+
+        #box {
+            background-color: green;
+        }
+
+
+
+        /* 后代选择器 */
+        /* .box span   权重 10+1=11 */
+
+        /* div span span a 权重 1+1+1+1=4 */
+
+        /* div #box .a  权重 1+100+10=111 */
+
+        /* span  1 */
+        /* #span 100*/
+        /* .box span  11*/
+        /* .box #span 110*/
+        /* div div span  3*/
+        /* div .box span  12*/
+        /* div .box #span 111*/
+
+    </style>
+</head>
+
+<body>
+
+    <!-- id选择器>类名选择器>标签选择器>通配符选择器 -->
+    <!-- 0100       0010     0001      0000 -->
+    <!-- 权重计算 -->
+
+    <div class="box" id="box" style="background-color: pink;">演示盒子</div>
+
+
+    <div>
+        <div class="box">
+            <span id="span">111</span>
+        </div>
+    </div>
+
+
+    <!-- !important>行内样式（选择器）>id选择器>类名选择器>标签选择器>通配符选择器>继承的样式>浏览器默认样式 -->
+
+
+
+</body>
+
+</html>
