@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 2.内嵌样式  利用style标签编写样式-->
+    <style>
+        /* 4. 输入样式 放在style标签第一行里面，  通过关键字导入另一个外部文件 */
+        @import url(./css/2.css);
+
+        p {
+            background-color: yellow;
+        }
+    </style>
+
+    <!-- 3.外联样式 使用link标签引入外部文件 -->
+    <link rel="stylesheet" href="./css/1.css">
+</head>
+
+<body>
+
+    <!-- 1.内联/行内样式 就是在任意一个html标签里面使用style属性使用样式 -->
+    <div class="box" style="background-color: red;">box盒子</div>
+
+    <p>p标签</p>
+
+    <span>span标签</span>
+
+    <br>
+
+    <div class="b">span2标签</div>
+
+    <!-- 优先级  样式覆盖 -->
+
+</body>
+
+</html>
