@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.查看input输入框type属性为text的元素 */
+        input[type=text] {
+            color: red;
+        }
+        [type=password] {
+            color: yellow;
+        }
+        /* 2.查询title属性是无图片的div元素，必须要整个相等 */
+        div[title~="无图片"] {
+            background-color: green;
+        }
+
+        /* 3. 查询class属性是box为开头的div元素，必须完整的开头*/
+        div[class|="box"] {
+            background-color: pink;
+        }
+
+        /* 4.查询class属性是t结尾的div元素  */
+        div[class$="t"] {
+            background-color: blue;
+        }
+
+        /* 5. 查询class属性是否有g这个单词 包含关系*/
+        div[class*="bg"] {
+            background-color: black;
+        }
+
+        /* 6.查询class属性是box为开头的div元素，不需要完整的开头  */
+        div[class^="hea"] {
+            background-color: cadetblue;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!-- 属性选择器 [属性与属性值联系] -->
+    <input type="text" placeholder="文本框">
+    <input type="password" placeholder="密码框">
+    <input type="search" placeholder="搜索框">
+
+    <!-- 2.查询title属性是无图片的元素，必须要整个相等 -->
+    <div title="无图片">无图片</div>
+    <div title="有图片">有图片</div>
+
+    <!-- 3. 查询class属性是box为开头的元素，必须完整的开头 -->
+    <div class="box-box2">box</div>
+
+    <!-- 4.查询class属性是t结尾的div元素 -->
+    <div class="test">test</div>
+
+    <!-- 5.查询class属性是否有g这个单词  -->
+    <div class="bigbox">bigbox</div>
+
+    <!-- 6.查询class属性是box为开头的div元素，不需要完整的开头 -->
+    <div class="head">head</div>
+
+</body>
+</html>

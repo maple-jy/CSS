@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 宽 */
+            width: 200px;
+            /* 高 */
+            height: 200px;
+        }
+        div::first-letter {
+            color: red;
+        }
+        div::first-line {
+            background-color: aqua;
+        }
+        div::before {
+            content: "";
+        }
+        div::after {
+            content: "bb";
+            background-color: red;
+        }
+        div::selection {
+            background-color: yellow;
+        }
+
+        /* hover 鼠标悬停 可以是任何标签:hover */
+        div:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 1.第一个字母、文字 ::first-letter   -->
+    <!-- 2.第一行 ::first-line  -->
+    <!-- 3.在元素前插入::before 在元素之前添加类似span的元素  content一定要加 常用-->
+    <!-- 4.在元素后插入::after  在元素之后添加类似span的元素  content一定要加 常用-->
+    <!-- 5.选中::selection -->
+    <div>
+        <!-- <span></span> -->
+        这是个美丽的世界，马上干饭就更美丽了
+        这是个美丽的世界，马上干饭就更美丽了
+        这是个美丽的世界，马上干饭就更美丽了
+        这是个美丽的世界，马上干饭就更美丽了
+        这是个美丽的世界，马上干饭就更美丽了
+    </div>
+
+    <div>
+        <!-- <span></span> -->
+        这是个美丽的世界，马上干饭就更美丽了
+        这是个美丽的世界，马上干饭就更美丽了
+        这是个美丽的世界，马上干饭就更美丽了
+        这是个美丽的世界，马上干饭就更美丽了
+        这是个美丽的世界，马上干饭就更美丽了
+    </div>
+
+
+</body>
+</html>
