@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            box-shadow: 0px 0px 10px red, 0px 0px 20px blue;
+            margin: 0 auto;
+        }
+
+        .small-box {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 200px;
+            text-shadow: 0 0 10px red,0 0 20px red,0 0 40px red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- 盒子阴影
+         box-shadow属性 给元素添加阴影效果
+         属性值分别是：
+         1.水平偏移量（正数偏右，负数偏左）
+         2.垂直偏移量（正数偏下，负数偏上）
+         3.模糊度
+         4.阴影颜色
+         5.内阴影inset 可以不写，那就是默认外阴影
+
+         注意：可以写多个阴影，但是要用逗号隔开
+    -->
+    <div class="box"></div>
+
+    <!-- 文字阴影 -->
+    <!-- text-shadow属性 给文本添加阴影效果 
+          属性值分别是：
+            1.水平偏移量（正数偏右，负数偏左）
+            2.垂直偏移量（正数偏下，负数偏上）
+            3.模糊度
+            4.阴影颜色
+        注意：可以写多个阴影，但是要用逗号隔开      
+    -->
+
+    <div class="small-box">small-box</div>
+
+</body>
+
+</html>

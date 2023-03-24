@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            /* 转为块级元素 */
+            display: block;
+            /* display: none;  */
+        }
+
+        .bigbox {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        /* 1. 本身:hover 鼠标悬停自己本身 鼠标移到.bigbox元素上设置样式*/
+        .bigbox:hover {
+            background-color: blue;
+        }
+
+        /* 2. 父元素:hover 子元素 鼠标移到.bigbox,它的后代.box元素设置样式*/
+        .bigbox:hover .box {
+            height: 60px;
+            background-color: green;
+        }
+
+        /* 3. 兄弟：hover（+、~）另一个兄弟   */
+        .box:hover+.box2 {
+            background-color: black;
+            color: #fff;
+
+            display: inline-block;
+            display: inline;
+        }
+
+        a {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            /* 转为行内块元素 */
+            display: inline-block;
+        }
+
+        .in {
+            width: 200px;
+            background-color: red;
+            /* 转为行内元素 */
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.  display: block 
+     作用：显示 转为块级元素
+ -->
+    <span>span标签，但是我想设置宽高</span>
+
+    <!-- 2.display: none
+     作用：隐藏
+ -->
+
+    <div class="bigbox">
+        <div class="box">1111</div>
+        <div class="box2">2222222222</div>
+    </div>
+
+    <!-- 3.display: inline-block; 
+    作用：转为行内块元素
+-->
+    <a href="">百度一下</a>
+
+    <!-- 4.display: inline -->
+    <!-- 作用：转为行内元素 -->
+
+    这是一个p标签，<div class="in">但是</div> 里面有div元素，依然显示一行
+
+
+</body>
+
+</html>

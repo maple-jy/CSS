@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 左外边距 */
+            margin-left: 20px;
+            /* 右外边距 */
+            margin-right: 10px;
+            /* 上外边距 */
+            margin-top: 30px;
+            /* 下外边距 */
+            margin-bottom: 40px;
+
+            /* 假设四个方向都为10px 当值为一个时，上下左右都为10  */
+            margin: 10px;
+            /* 当值为两个时，上下为10px  左右为20px */
+            margin: 10px 20px;
+            /* 当值为3个时  上为10px 左右为20px 下为30px*/
+            margin: 10px 20px 30px;
+            /* 当值为4个时  上为10px 右为20px 下为30px 左40px 顺时针*/
+            margin: 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 外边距 外面 边框 距离  边框外面的距离 margin-->
+    <!-- 注意
+        1.边框是有四条的，所以外边距也有四个
+        2.分别是上外边距 下外边距 左外边距 右外边距
+        3.四个方向  left左 right右 top上 bottom下
+        4.可以进行缩写   margin：10px
+    -->
+
+
+    <div>
+        这是鞋盒
+    </div>
+
+    <div>
+        这是化妆品盒子
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 边框的粗细 也可以有多个值，和外边距缩写是一样的*/
+            border-width: 10px;
+            /* 边框的类型 solid细实线 dashed虚线 dotted点状线 */
+            border-style: solid;
+            /* 边框的颜色 */
+            border-color: aqua;
+            /* 缩写  */
+            border: 5px solid green;
+            /* border: solid green 10px; */
+            /* 圆角 */
+            /* border-radius: 50%; */
+            border-radius: 100px;
+            /* 单独角设置  补充 右上角    右上角 border-bottom-right-radius   左上角border-top-left  左下角 border-bottom-left*/
+            border-top-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 边框:出现在盒子的四个方向的线  border
+        注意：
+        1.因为元素有四个方向 所以边框也有四个方向
+        2.边框可以进行缩写
+        3.边框有圆角，可以设置成圆 border-radius 当是正方形时候，设置属性值为50%，即是一个圆
+    -->
+    
+    <div class="box"></div>
+
+
+</body>
+</html>

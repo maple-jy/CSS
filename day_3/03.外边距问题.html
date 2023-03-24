@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+           
+        }
+        .box1 {
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            margin-bottom: 30px;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-top: 40px;
+        }
+
+        .bigbox {
+            width: 400px;
+            height: 400px;
+            background-color: brown;
+            overflow: hidden;
+        }
+        .small-box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-top: 150px;
+            /* 上下为0，左右自动居中 */
+            margin:150px auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 1.兄弟产生的问题  
+        如果是垂直方向的，第一个子元素有下外边距，第二个子元素有上外边距，那么这两个盒子中间的距离应为两个元素最大的外边距
+        如果是水平方向的，第一个子元素有右外边距，第二个子元素有左外边距，那么这两个盒子中间的距离应为两个元素的相加的值
+    -->
+
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+
+    <!-- 2.父子产生的问题
+        问题：给第一个子元素设置上方向的外边距，会导致父元素塌陷
+        解决：给父元素设置 overflow: hidden;
+    -->
+
+    <div class="bigbox">
+        <div class="small-box"></div>
+    </div>
+
+
+</body>
+</html>

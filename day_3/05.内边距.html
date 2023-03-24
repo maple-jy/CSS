@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 200px;  
+            height: 200px;
+            background-color: pink;
+            margin: 20px;
+            border: 20px solid red;
+            /* padding-left: 50px; */
+            padding:30px 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 内边距 内容 边框 距离 内容到边框的距离就称之为内边距 -->
+    <!-- padding  -->
+    <!-- 注意  
+        1.padding的规则和外边距是一样的
+        2.同样有四个方向 所有会有四个内边距 padding-left...
+        3.同样有简写 padding:10px
+        4.边框和内边距会撑大盒子元素的规定宽和高, 
+        box-sizing: border-box;怪异盒子模型，会自动计算合适的宽高
+    -->
+    <div>
+        内边距
+    </div>
+
+
+    <!-- 标准盒子模型  -->
+    div的实际的宽度：左边框+左内边距+内容区宽+右内边距+右边框
+    div 的宽=  2+50+200++50+2=304
+    
+    div的实际的高度：上边框+上内边距+内容区高+下内边距+下边框
+    div 的高 = 2+30+200+30+2=264
+
+
+
+    <!-- 怪异盒子模型 -->
+    <!-- div的实际宽度=设置的宽度（左右margin） -->
+    <!-- div的实际高度=设置的高度 （上下margin）-->
+
+ 
+</body>
+</html>
