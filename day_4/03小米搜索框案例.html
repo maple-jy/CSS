@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除所有内外边距 */
+        *{
+            padding:0px;
+            margin: 0px;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .search{
+            width: 296px;
+            height: 50px;
+            margin: 20px auto;
+            position: relative;
+        }
+        .search input{
+            width: 243px;
+            height: 48px;
+            /* 去除输入框选中边 */
+            outline: none; 
+            font-size: 14px;
+            color:#757575;
+            text-indent: 10px;
+            border:1px solid #E0E0E0;
+            float: left;
+        }
+        .search .btn{
+            height: 48px;
+            width: 50px;
+            float: left;
+            /* border-top:1px solid #E0E0E0; */
+            /* border-bottom:1px solid #E0E0E0; */
+            /* border-right:1px solid #E0E0E0; */
+            border:1px solid #E0E0E0;
+            border-left: 0px;
+            background: url("./img/ss.png") center center no-repeat;
+        }
+
+        .search.con input{
+            border-color: #FF6A00;
+        }
+        .search.con .btn{
+            border-color: #FF6A00;
+        }
+        .search.con .lists{
+            display: block;
+        }
+
+        .search .lists{
+            width: 243px;
+            border:1px solid #FF6A00;
+            position: absolute;
+            left:0px;
+            top:49px;
+            display: none;
+        }
+        .search .lists a{
+            display: block;
+            color:#424242;
+            font-size: 12px;
+            height: 30px;
+            line-height: 30px;
+            text-indent: 14px;
+        }
+        .search .lists a:hover{
+            background-color: #FAFAFA;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="search clearfix con">
+        <input type="text" placeholder="小米">
+        <div class="btn">&nbsp;</div>
+        <div class="lists">
+            <a href="">小米手机</a>
+            <a href="">小米手机</a>
+            <a href="">小米手机</a>
+            <a href="">小米手机</a>
+            <a href="">小米手机</a>
+        </div>
+    </div>
+</body>
+</html>

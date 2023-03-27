@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1679907904373') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e664";
+}
+
+.icon-add-circle:before {
+  content: "\e665";
+}
+
+.icon-adjust:before {
+  content: "\e666";
+}
+
+.icon-arrow-up-circle:before {
+  content: "\e667";
+}
+
+.icon-arrow-right-circle:before {
+  content: "\e668";
+}
+
+.icon-arrow-down:before {
+  content: "\e669";
+}
+
+.icon-ashbin:before {
+  content: "\e66a";
+}
+
+.icon-bad:before {
+  content: "\e66b";
+}
+
+.icon-arrow-double-left:before {
+  content: "\e66c";
+}
+
+.icon-arrow-left-circle:before {
+  content: "\e66d";
+}
+
+.icon-arrow-double-right:before {
+  content: "\e66e";
+}
+
+.icon-caps-lock:before {
+  content: "\e66f";
+}
+
+.icon-business-icon-buyers-club-fill:before {
+  content: "\e822";
+}
+
+.icon-business-icon-ali-clould:before {
+  content: "\e823";
+}
+
+.icon-a-business-icon-MOQ:before {
+  content: "\e824";
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 定位 */
+        /* div{ */
+            /* position: relative;  相对定位 盒子自身定位 */
+            /* position: absolute; 绝对定位 */
+            /* position: fixed; 固定定位 */
+            /* position: static; 静态定位默认效果 */
+            /* position: sticky; 黏性定位 */
+
+            /* 方位属性 */
+            /* left  左边 */
+            /* right 右边 */
+            /* top  顶部 */
+            /* bottom 底部 */
+        /* } */
+
+        .box{
+            width: 300px;
+            padding:20px;
+            background: #C8EBFA;
+            margin: 50px auto;
+        }
+        .box>div{
+            margin-bottom: 10px;
+            height: 50px;
+        }
+        .one{
+            background: #6BD089;
+        }
+        .two{
+            background: #FFB27D;
+            /* 相对定位 保留盒子自身位置 */
+            position: relative;
+            top:20px;
+            left:20px;
+        }
+        .three{
+            background: #8389E0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+</body>
+</html>
