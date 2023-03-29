@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/base.css">  
+    <!-- 小米字体图标 -->
+    <link rel="stylesheet" href="./css/miicon.css">
+    <style>
+        .home{
+            background-color: #F5F5F5;
+        }
+        .home .tabsList .head h1{
+            color:#363636;
+            font-weight: 200;
+            height: 58px;
+            line-height: 58px;
+        }
+        .home .tabsList .head ul li{
+            float: left;
+            height: 23px;
+            line-height: 23px;
+            margin-top: 16px;
+            border-bottom: 2px solid transparent;
+            font-size: 16px;
+            color:#454545;
+            margin-left: 30px;
+        }
+        .home .tabsList .head ul li.con{
+            border-color: #FF6700;
+            color:#FF6700;
+        }
+        .home .tabsList .body .fl{
+            width: 234px;
+            height: 614px;
+            background-color: #fff;
+        }
+        .home .tabsList .body .fr{
+            width: 992px;
+        }
+        .home .tabsList .body .fr li{
+            float: left;
+            width: 234px;
+            margin: 0px 0px 14px 14px;
+            height: 300px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .home .tabsList .body .fr li:hover{
+            box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        }
+        .home .tabsList .body .fr li .img{
+            width: 160px;
+            height: 160px;
+            margin: auto;
+            padding:20px 0px 18px 0px;
+        }
+        .home .tabsList .body .fr li .img img{
+            width: 100%;
+        }
+        .home .tabsList .body .fr li h5{
+            color:#363636;
+            font-weight: normal;
+            height: 20px;
+            line-height: 20px;
+        }
+        .home .tabsList .body .fr li h6{
+            color:#B0B0B0;
+            height: 22px;
+            line-height: 22px;
+            font-weight: normal;
+            padding:0px 10px;
+            margin-bottom: 10px;
+        }
+        .home .tabsList .body .fr li .price{
+            height: 20px;
+            line-height: 20px;
+            color:#FF6700;
+            font-size: 14px;
+        }
+        .home .tabsList .body .fr li del{
+            color:#B0B0B0;
+        }
+        .home .tabsList .body .fr .brick_item{
+            width: 234px;
+            height: 143px;
+            float: left;
+            background-color: #fff;
+        }
+        .home .tabsList .body .fr .brick_item .text{
+            float: left;
+            width: 90px;
+            margin: 40px 0 0 30px;
+            text-align: left;
+        }
+
+        
+        .home .tabsList .body .fr .brick_item .text h1{
+            font-size: 14px;
+            line-height: 22px;
+            color:#363636;
+            font-weight: normal;
+        }
+        .home .tabsList .body .fr .brick_item .text .price{
+            font-size: 12px;
+        }
+            
+        .home .tabsList .body .fr .brick_item .imgs{
+            float: left;
+            width: 80px;
+            height: 80px;
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+        .home .tabsList .body .fr .brick_item .imgs img{
+            width: 100%;
+        }
+        .home .tabsList .body .fr .brick_item2{
+            width: 234px;
+            height: 143px;
+            float: left;
+            background-color: #fff;
+            position: relative;
+        }
+
+        .home .tabsList .body .fr .brick_item2 .text{
+            margin: 51px 0 0 30px;
+            text-align: left;
+        }
+        .home .tabsList .body .fr .brick_item2 .text h1{
+            font-size: 20px;
+            color:#363636;
+            font-weight: normal;
+            height: 25px;
+            line-height: 25px;
+        }
+        .home .tabsList .body .fr .brick_item2 .text p{
+            color:#757575;
+        }
+        .home .tabsList .body .fr .brick_item2 span{
+            width: 55px;
+            height: 55px;
+            font-size: 48px;
+            color:#FF6700;
+            text-align: center;
+            line-height: 55px;
+            position: absolute;
+            top:41px;
+            left:147px;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="container">
+            <div class="tabsList">
+                <div class="head clearfix">
+                    <h1 class="fl">智能穿戴</h1>
+                    <ul class="fr">
+                        <li class="con">
+                            耳机
+                        </li>
+                        <li>
+                            穿戴
+                        </li>
+                    </ul>
+                </div>
+                <div class="body clearfix">
+                    <div class="fl">
+                        <img src="./img/574c6643ab91c6618bfb2d0e2c761d0b.webp" alt="">
+                    </div>
+                    <div class="fr">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img">
+                                    <img src="./img/list02.webp" alt="">
+                                </div>
+                                <h5> Xiaomi Buds 4 Pro</h5>
+                                <h6 class="text_row">48dB智能动态降噪｜骨声纹通话降噪 | 独立空间音频</h6>
+                                <div class="price">
+                                    1049元 <del>1099元</del>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="./img/list02.webp" alt="">
+                                </div>
+                                <h5> Xiaomi Buds 4 Pro</h5>
+                                <h6 class="text_row">48dB智能动态降噪｜骨声纹通话降噪 | 独立空间音频</h6>
+                                <div class="price">
+                                    1049元 <del>1099元</del>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="./img/list02.webp" alt="">
+                                </div>
+                                <h5> Xiaomi Buds 4 Pro</h5>
+                                <h6 class="text_row">48dB智能动态降噪｜骨声纹通话降噪 | 独立空间音频</h6>
+                                <div class="price">
+                                    1049元 <del>1099元</del>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="./img/list02.webp" alt="">
+                                </div>
+                                <h5> Xiaomi Buds 4 Pro</h5>
+                                <h6 class="text_row">48dB智能动态降噪｜骨声纹通话降噪 | 独立空间音频</h6>
+                                <div class="price">
+                                    1049元 <del>1099元</del>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="./img/list02.webp" alt="">
+                                </div>
+                                <h5> Xiaomi Buds 4 Pro</h5>
+                                <h6 class="text_row">48dB智能动态降噪｜骨声纹通话降噪 | 独立空间音频</h6>
+                                <div class="price">
+                                    1049元 <del>1099元</del>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="./img/list02.webp" alt="">
+                                </div>
+                                <h5> Xiaomi Buds 4 Pro</h5>
+                                <h6 class="text_row">48dB智能动态降噪｜骨声纹通话降噪 | 独立空间音频</h6>
+                                <div class="price">
+                                    1049元 <del>1099元</del>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="./img/list02.webp" alt="">
+                                </div>
+                                <h5> Xiaomi Buds 4 Pro</h5>
+                                <h6 class="text_row">48dB智能动态降噪｜骨声纹通话降噪 | 独立空间音频</h6>
+                                <div class="price">
+                                    1049元 <del>1099元</del>
+                                </div>
+                            </li>
+                            <li class="brick_item">
+                                <div class="text">
+                                    <h1>Xiaomi降噪蓝牙耳机Necklace</h1>
+                                    <div class="price">499元</div>
+                                </div>
+                                <div class="imgs">
+                                    <img src="./img/020003.webp" alt="">
+                                </div>
+                            </li>
+                            
+                            <li class="brick_item2">
+                                <div class="text">
+                                    <h1>浏览更多</h1>
+                                    <p>耳机</p>
+                                </div>
+                                <span class="iconfont iconfont-circle-arrow-right"></span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
